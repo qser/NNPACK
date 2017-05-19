@@ -5,6 +5,7 @@ install:
  - pushd /tmp/ninja
  - git checkout release
  - python configure.py --bootstrap
+ 
  - mkdir -p $HOME/.local/bin
  - install -m 755 /tmp/ninja/ninja $HOME/.local/bin/ninja
  - popd
